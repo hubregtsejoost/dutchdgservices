@@ -5,7 +5,6 @@ function Consultancy() {
     return (
       <div>
         <Navbar />
-
         <Footer />
       </div>
     )

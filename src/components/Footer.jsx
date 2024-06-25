@@ -4,14 +4,15 @@ import {
   FaInstagram,
 } from 'react-icons/fa';
 import {Link} from 'react-router-dom'
+import Logo from './Logo';
 
 function Footer() {
   return (
     <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-600'>
       <div>
-        <h1 className='w-full text-3xl font-bold text-red-400'>DutchDGServices</h1>
+        <h1 className='w-full text-3xl font-bold text-red-400'><Logo className="w-1/2"/></h1>
         <p className='py-4'>DDGS is met haar E-herkenning gevestigd op Schiphol-Rijk. Wij zijn een nieuw en creatief bedrijf met ervaren specialisten en nodigen u graag uit om contact met ons op te nemen en kennis met onze service te maken.</p>
-        <div className='flex justify-between md:w-[75%] cursor-pointer my-6'>
+        <div className='flex justify-between w-[50%] md:w-[50%] cursor-pointer my-6'>
             <a href="https://www.linkedin.com/company/dutch-dg-services-bv/" target="_blank"><FaLinkedin className='hover:text-red-400' size={30} /></a>
             <a href="https://www.facebook.com/people/Dutch-DG-Services-BV/100080203489333/" target="_blank"><FaFacebookSquare className='hover:text-red-400' size={30} /></a>
             <a href="https://www.instagram.com/dutchdgservice/" target="_blank"><FaInstagram className='hover:text-red-400' size={30} /></a>
@@ -21,10 +22,10 @@ function Footer() {
     <div>
         <h6 className='font-medium text-red-400'>Info</h6>
         <ul>
-            <li className='py-2 text-sm cursor-pointer hover:text-red-400' ><a href="mailto:info@dutchdgservices.nl" target="_blank">info@dutchdgservices.nl</a></li>
-            <li className='py-2 text-sm cursor-pointer hover:text-red-400'><a href="tel:020-2480205" target="_blank">020-2480205</a></li>
-            <li className='py-2 text-sm cursor-pointer hover:text-red-400'><a href="https://maps.app.goo.gl/zow5PUaX6wMuHrgH6" target="_blank">CAPRONILAAN 12</a></li>
-            <li className='py-2 text-sm cursor-pointer hover:text-red-400'><a href="https://maps.app.goo.gl/zow5PUaX6wMuHrgH6" target="_blank">1119 NR, SCHIPHOL-RIJK</a></li>
+            <Link to='mailto:info@dutchdgservices.nl'><li className='py-2 text-sm cursor-pointer hover:text-red-400' ><a target="_blank">info@dutchdgservices.nl</a></li></Link>
+            <Link to='tel:020-2480205'><li className='py-2 text-sm cursor-pointer hover:text-red-400'><a target="_blank">020-2480205</a></li></Link>
+            <Link to='https://maps.app.goo.gl/zow5PUaX6wMuHrgH6'><li className='py-2 text-sm cursor-pointer hover:text-red-400'><a target="_blank">CAPRONILAAN 12</a></li></Link>
+            <Link to='https://maps.app.goo.gl/zow5PUaX6wMuHrgH6'><li className='py-2 text-sm cursor-pointer hover:text-red-400'><a target="_blank">1119 NR, SCHIPHOL-RIJK</a></li></Link>
         </ul>
     </div>
     <div>
@@ -39,17 +40,17 @@ function Footer() {
     <div>
         <h6 className='font-medium text-red-400'>Company</h6>
         <ul>
-            <li className='py-2 text-sm cursor-pointer hover:text-red-400'>Over Ons</li>
-            <li className='py-2 text-sm cursor-pointer hover:text-red-400'>Vacatures</li>
-            <li className='py-2 text-sm cursor-pointer hover:text-red-400'>Press</li>
+            <Link to=''><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Over Ons</li></Link>
+            <Link to=''><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Vacatures</li></Link>
+            <Link to=''><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Press</li></Link>
         </ul>
     </div>
     <div>
         <h6 className='font-medium text-red-400'>Legal</h6>
-        <ul>
-            <li className='py-2 text-sm cursor-pointer hover:text-red-400'>Claim</li>
-            <li className='py-2 text-sm cursor-pointer hover:text-red-400'>Policy</li>
-            <li className='py-2 text-sm cursor-pointer hover:text-red-400'>Terms</li>
+        <ul className=''>
+            <Link to=''><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Policy</li></Link>
+            <Link to=''><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Claim</li></Link>
+            <Link to=''><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Terms</li></Link>
         </ul>
     </div>
       </div>
