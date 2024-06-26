@@ -10,8 +10,8 @@ function App() {
     <div>
       <Nav />
       <Hero />
-      <Over />
       <Cards />
+      <Over />
       <Converter />
       <Footer />
     </div>
