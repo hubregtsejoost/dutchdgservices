@@ -4,7 +4,7 @@ function Over() {
   return (
     <div className='w-full py-16 px-4'>
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
-        <video autoPlay loop className='w-[500px] mx-auto my-4 rounded-lg' src={Haven} alt='/' />
+        <video autoPlay playsInline loop className='w-[500px] mx-auto my-4 rounded-lg' src={Haven} alt='/' />
         <div className='flex flex-col justify-center'>
             <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>Wie zijn wij</h1>
             <p>
