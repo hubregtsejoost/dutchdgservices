@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <div className='flex justify-between items-center h-24 max-w-[2040px] mx-auto px-4'>
-      <Link to='/'><img className="object-fit w-1/3" src="/src/assets/logo.png" alt="" /></Link>
+      <Link to='/'><img className="object-fit w-1/3" src="/assets/Logo.png" alt="" /></Link>
       <ul className='hidden md:flex'>
         <Link to='/'><li className='py-3 px-4 hover:underline hover:text-red-400 cursor-pointer'>Home</li></Link>
         <Link to='/verpakken'><li className='py-3 px-4 hover:underline hover:text-red-400 cursor-pointer'>Verpakken & Checken</li></Link>
@@ -24,7 +24,7 @@ function Navbar() {
           {nav ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30} />}
       </div>
       <ul className={nav ? 'fixed left-0 top-0 w-[80%] h-full border-r border-r-gray-900 bg-[#fff] ease-in-out duration-500' : 'ease-in-out duration-500 fixed left-[-100%]'}>
-        <Link to='/'><img className="object-fit w-1/2 p-4" src="/src/assets/logo.png" alt="" /></Link>
+        <Link to='/'><img className="object-fit w-1/2 p-4" src="/assets/logo.png" alt="" /></Link>
         <Link to='/'><li className='p-4 border-b border-gray-600 hover:underline hover:text-red-400 cursor-pointer'>Home</li></Link>
         <Link to='/verpakken'><li className='p-4 border-b border-gray-600 hover:underline hover:text-red-400 cursor-pointer'>Verpakken & Checken</li></Link>
         <Link to='/opleiden'><li className='p-4 border-b border-gray-600 hover:underline hover:text-red-400 cursor-pointer'>Opleiden & Consultancy</li></Link>

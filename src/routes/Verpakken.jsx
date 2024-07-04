@@ -3,6 +3,7 @@ import Footer from "../components/Footer"
 import Navbar from "../components/Nav"
 import Header from "../components/Header"
 import Alert from "../components/Alert"
+import AcceptatieChecks from "../components/AcceptatieChecks"
 
 function Verpakken() {
     return (
@@ -11,6 +12,7 @@ function Verpakken() {
         <Navbar />
         <Header title="Verpakken & Checken" />
         <Documentatie />
+        <AcceptatieChecks />
         <Footer />
       </div>
     )

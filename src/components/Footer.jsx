@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-600'>
       <div>
-        <img className="object-fit w-1/2" src="/src/assets/logo.png" alt="" />
+        <img className="object-fit w-1/2" src="/assets/logo.png" alt="" />
         <p className='py-4'>DDGS is met haar E-herkenning gevestigd op Schiphol-Rijk. Wij zijn een nieuw en creatief bedrijf met ervaren specialisten en nodigen u graag uit om contact met ons op te nemen en kennis met onze service te maken.</p>
         <div className='flex justify-between w-[50%] md:w-[50%] cursor-pointer my-6'>
             <a href="https://www.linkedin.com/company/dutch-dg-services-bv/" target="_blank"><FaLinkedin className='hover:text-red-400' size={30} /></a>
