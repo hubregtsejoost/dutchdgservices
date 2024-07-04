@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Cards() {
   return (
-    <div className='w-full py-[6rem] px-4 '>
+    <div className='w-full md:py-[6rem] px-4 '>
       <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8'>
 
           <div className='border border-black bg-white w-full shadow-md flex flex-col p-4 my-4 rounded-lg'>

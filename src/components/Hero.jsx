@@ -5,7 +5,7 @@ function Hero() {
 
   return (
     <div className='text-slate-900 mt-12'>
-      <div className='z-30 max-w-[1100px] px-4 w-full h-[500px] mx-auto text-center flex flex-col justify-center'>
+      <div className='max-w-[1100px] px-4 w-full h-[400px] mx-auto text-center flex flex-col justify-center'>
         
 <h1 className='md:text-6xl sm:text-5xl text-3xl md:py-6'>
           Specialist in het <Link to='/verpakken' className='hover:text-red-400'><u>Verpakken</u></Link> en <Link to='/verpakken' className='hover:text-red-400'><u>Behandelen</u></Link> van uw gevaarlijke stoffen

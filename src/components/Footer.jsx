@@ -4,13 +4,12 @@ import {
   FaInstagram,
 } from 'react-icons/fa';
 import {Link} from 'react-router-dom'
-import Logo from './Logo';
 
 function Footer() {
   return (
     <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-600'>
       <div>
-        <h1 className='w-full text-3xl font-bold text-red-400'><Logo className="w-1/2"/></h1>
+        <img className="object-fit w-1/2" src="/src/assets/logo.png" alt="" />
         <p className='py-4'>DDGS is met haar E-herkenning gevestigd op Schiphol-Rijk. Wij zijn een nieuw en creatief bedrijf met ervaren specialisten en nodigen u graag uit om contact met ons op te nemen en kennis met onze service te maken.</p>
         <div className='flex justify-between w-[50%] md:w-[50%] cursor-pointer my-6'>
             <a href="https://www.linkedin.com/company/dutch-dg-services-bv/" target="_blank"><FaLinkedin className='hover:text-red-400' size={30} /></a>
@@ -31,10 +30,9 @@ function Footer() {
     <div>
         <h6 className='font-medium text-red-400'>Solutions</h6>
         <ul>
-            <Link to='/verpakken'><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Verpakken</li></Link>
-            <Link to='/opleiden'><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Opleiden</li></Link>
+            <Link to='/verpakken'><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Verpakken & Checken</li></Link>
+            <Link to='/opleiden'><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Opleiden & Consultancy</li></Link>
             <Link to='/droogijs'><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Droogijs</li></Link>
-            <Link to='/consultancy'><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Consultancy</li></Link>
         </ul>
     </div>
     <div>
@@ -45,14 +43,7 @@ function Footer() {
             <Link to=''><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Press</li></Link>
         </ul>
     </div>
-    <div>
-        <h6 className='font-medium text-red-400'>Legal</h6>
-        <ul className=''>
-            <Link to=''><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Policy</li></Link>
-            <Link to=''><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Claim</li></Link>
-            <Link to=''><li className='py-2 text-sm cursor-pointer hover:text-red-400'>Terms</li></Link>
-        </ul>
-    </div>
+
       </div>
     </div>
   );
